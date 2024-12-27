@@ -6,7 +6,7 @@ import SideBar from "./components/SideBar";
 function App() {
   const [showModal, setShowModal] = useState(false);
   const [data, setData] = useState(null);
-  const [loading, setLoading] = useState(false);
+
   function handleToggleModal() {
     setShowModal(!showModal);
   }
@@ -14,8 +14,7 @@ function App() {
   useEffect(() => {
     async function fetchAPIData() {
       const NASA_KEY = process.env.REACT_APP_NASA_KEY;
-      const url =
-        "https://api.nasa.gov/planetary/apod" + `?api_key=${NASA_KEY}`;
+      const url = "https://api.nasa.gov/planetary/apod"`?api_key=${NASA_KEY}`;
       const today = new Date().toDateString();
       const localKey = `NASA-${today}`;
 

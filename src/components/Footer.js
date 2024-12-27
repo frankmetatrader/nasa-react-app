@@ -1,6 +1,6 @@
 import "../footer.css";
 export default function Footer(props) {
-  const { showModal, onToggleModal, data } = props;
+  const { onToggleModal, data } = props;
 
   return (
     <footer>
